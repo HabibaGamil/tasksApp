@@ -12,7 +12,7 @@ import java.util.List;
 
 @SpringBootApplication
 public class TasksAppApplication{
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
+
 
 	@Autowired
 	TaskRepository repo;
@@ -21,7 +21,6 @@ public class TasksAppApplication{
 //	TaskDao dao;
 
 	public static void main(String[] args) {
-		System.out.println(SpringVersion.getVersion());
 		SpringApplication.run(TasksAppApplication.class, args);
 
 	}

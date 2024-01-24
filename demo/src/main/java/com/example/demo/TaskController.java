@@ -22,12 +22,21 @@ public class TaskController {
     }
 
     @GetMapping("/tasks/{id}")
-    public Task allTasks(@PathVariable int id) {
+    public Task getTask(@PathVariable int id) {
         return service.getTask(id);
     }
     @PostMapping("/tasks")
     public Task addTask(@RequestBody Task task) {
         task.setId(0);
         return service.addTask(task);
+    }
+    @PatchMapping("/tasks/{id}")
+    public Task updateTask(@PathVariable int id, @RequestBody Task task) {
+       return service.updateTask(id,task);
+    }
+
+    @DeleteMapping("tasks/{id}")
+    public void deleteTask(@PathVariable int id) {
+        service.deleteTask(id);
     }
 }
