@@ -1,0 +1,8 @@
+--  INSERT INTO Employee (ID, Name,Title,Department)
+--  VALUES(1, 'Habiba', 1, 4);
+--
+--  INSERT INTO Task (ID,Title,Description,status)
+--  VALUES(1, 'Spring Task', 'Create basic spring app',0);
+--
+--  INSERT INTO Task (ID,Title,Description,status)
+--  VALUES(2, 'Angular Task', 'Create basic angular app',0);
